@@ -56,6 +56,20 @@ cp .env.example .env
 
 ## Quick Start
 
+### Web Interface (Recommended)
+
+```bash
+# Make sure Ollama is running
+ollama serve
+
+# Start the web interface
+python web_app.py
+```
+
+Then open your browser to: http://localhost:5000
+
+### Command Line Interface
+
 ```bash
 # Make sure Ollama is running
 ollama serve
@@ -291,11 +305,43 @@ MIT License
 
 For issues and questions, please open an issue on GitHub.
 
+## Web Interface
+
+The project now includes a user-friendly web interface built with Flask! The web UI provides:
+
+- **Visual Task Builder**: Intuitive forms to describe your task and configure settings
+- **Dynamic Examples**: Add/remove examples on the fly with a clean interface
+- **Real-time Status**: See Ollama connection status and pipeline generation progress
+- **Code Preview**: View generated pipeline code with syntax highlighting
+- **File Downloads**: Download all generated files (pipeline, config, synthetic prompts)
+- **Synthetic Data Prompts**: Get prompts to generate more training data
+- **Clean Modern Design**: Responsive interface that works on desktop and mobile
+
+### Starting the Web Interface
+
+```bash
+# Make sure Ollama is running
+ollama serve
+
+# Start the web server
+python web_app.py
+```
+
+The interface will be available at http://localhost:5000
+
+### Features
+
+1. **Step-by-step workflow**: Guides you through task definition, examples, and generation
+2. **Health monitoring**: Checks if Ollama is running before you start
+3. **Tabbed results**: Switch between pipeline code, synthetic prompts, and downloads
+4. **Copy to clipboard**: Quick copy buttons for code and prompts
+5. **Error handling**: Clear error messages with suggestions
+
 ## Roadmap
 
+- [x] Web UI for easier interaction
 - [ ] Support for more DSPy optimizers (MIPRO, BayesianSignatureOptimizer)
 - [ ] Automatic synthetic data generation
-- [ ] Web UI for easier interaction
 - [ ] Pipeline versioning and comparison
 - [ ] Integration with more LLM providers
 - [ ] Batch processing mode

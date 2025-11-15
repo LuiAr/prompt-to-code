@@ -13,5 +13,8 @@ xlrd>=2.0.0      # For reading Excel files
 # Utilities
 python-dotenv>=1.0.0
 
+# Web Interface
+Flask>=3.0.0
+
 # Optional but recommended
 pydantic>=2.0.0
