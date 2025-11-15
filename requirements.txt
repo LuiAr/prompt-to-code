@@ -1,0 +1,17 @@
+# Core Dependencies
+dspy-ai>=2.4.0
+requests>=2.31.0
+
+# Ollama Support
+ollama>=0.1.0
+
+# Data Processing
+pandas>=2.0.0
+openpyxl>=3.1.0  # For Excel file handling
+xlrd>=2.0.0      # For reading Excel files
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional but recommended
+pydantic>=2.0.0
